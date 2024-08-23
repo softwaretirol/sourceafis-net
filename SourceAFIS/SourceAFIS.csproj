@@ -25,7 +25,7 @@
     <None Include="icon.png" Pack="true" PackagePath="/" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Dahomey.Cbor" Version="1.16.1" />
-    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.8" />
+    <PackageReference Include="Dahomey.Cbor" Version="1.24.3" />
+    <PackageReference Include="SkiaSharp" Version="2.88.8" />
   </ItemGroup>
 </Project>

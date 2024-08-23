@@ -18,7 +18,13 @@ namespace SourceAFIS.Engine.Primitives
         // We will give it fake object factory to keep it happy.
         class NoDefaultConstructor : ICreatorMapping
         {
+            public object CreateInstance(Dictionary<int, object> values)
+            {
+                throw new NotImplementedException();
+            }
+
             public IReadOnlyCollection<RawString> MemberNames => null;
+            public IReadOnlyCollection<int> MemberIndexes { get; }
 
             public void Initialize() { }
             public object CreateInstance(Dictionary<RawString, object> values) => throw new NotImplementedException();
